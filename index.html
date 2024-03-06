@@ -15,14 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -58,7 +51,7 @@
     </header>
 
     <main>
-      <section class="hero-section section">
+      <section class="hero-section">
         <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
           <button class="order-button" type="button">Order Service</button>
@@ -67,9 +60,9 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="hidden-title">title</h2>
+          <h2 .visually-hidden>title</h2>
           <ul class="main-list">
-            <li>
+            <li class="main-list-item">
               <h3 class="main-title">Strategy</h3>
               <p class="main-text">
                 Our goal is to identify the business problem to walk away with
@@ -101,7 +94,7 @@
         </div>
       </section>
 
-      <section class="team-title section">
+      <section class="section">
         <div class="container">
           <h2 class="team-title-name">Our Team</h2>
           <ul class="our-team">
@@ -112,8 +105,10 @@
           Product Designer"
                 width="264"
               />
-              <h3 class="team-name">Mark Guerrero</h3>
-              <p class="team-position">Product Designer</p>
+              <div class="team-card">
+                <h3 class="team-name">Mark Guerrero</h3>
+                <p class="team-position">Product Designer</p>
+              </div>
             </li>
 
             <li class="team-list">
@@ -122,8 +117,10 @@
                 alt="Photo of Tom Ford Frontend Developer"
                 width="264"
               />
-              <h3 class="team-name">Tom Ford</h3>
-              <p class="team-position">Frontend Developer</p>
+              <div class="team-card">
+                <h3 class="team-name">Tom Ford</h3>
+                <p class="team-position">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="team-list">
@@ -132,8 +129,10 @@
                 alt="Photo of Camila Garcia from Marketing"
                 width="264"
               />
-              <h3 class="team-name">Camila Garcia</h3>
-              <p class="team-position">Marketing</p>
+              <div class="team-card">
+                <h3 class="team-name">Camila Garcia</h3>
+                <p class="team-position">Marketing</p>
+              </div>
             </li>
 
             <li class="team-list">
@@ -142,8 +141,10 @@
                 alt="Photo of Daniel Wilson UI Designer"
                 width="264"
               />
-              <h3 class="team-name">Daniel Wilson</h3>
-              <p class="team-position">UI Designer</p>
+              <div class="team-card">
+                <h3 class="team-name">Daniel Wilson</h3>
+                <p class="team-position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -155,23 +156,31 @@
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <img src="./images/img1.jpg" alt="Banking App" width="360" />
-              <h3 class="portfolio-title">Banking App</h3>
-              <p class="portfolio-text">App</p>
+              <div class="portfolio-container">
+                <h3 class="portfolio-title">Banking App</h3>
+                <p class="portfolio-text">App</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img src="./images/img2.jpg" alt="Cashless Payment" width="360" />
-              <h3 class="portfolio-title">Cashless Payment</h3>
-              <p class="portfolio-text">Marketing</p>
+              <div class="portfolio-container">
+                <h3 class="portfolio-title">Cashless Payment</h3>
+                <p class="portfolio-text">Marketing</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img src="./images/img3.jpg" alt="Meditation App" width="360" />
-              <h3 class="portfolio-title">Meditation App</h3>
-              <p class="portfolio-text">App</p>
+              <div class="portfolio-container">
+                <h3 class="portfolio-title">Meditation App</h3>
+                <p class="portfolio-text">App</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img src="./images/img4.jpg" alt="Taxi Service" width="360" />
-              <h3 class="portfolio-title">Taxi Service</h3>
-              <p class="portfolio-text">Marketing</p>
+              <div class="portfolio-container">
+                <h3 class="portfolio-title">Taxi Service</h3>
+                <p class="portfolio-text">Marketing</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img
@@ -179,13 +188,17 @@
                 alt="Screen Illustrations"
                 width="360"
               />
-              <h3 class="portfolio-title">Screen Illustrations</h3>
-              <p class="portfolio-text">Design</p>
+              <div class="portfolio-container">
+                <h3 class="portfolio-title">Screen Illustrations</h3>
+                <p class="portfolio-text">Design</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img src="./images/img6.jpg" alt="Online Courses" width="360" />
-              <h3 class="portfolio-title">Online Courses</h3>
-              <p class="portfolio-text">Marketing</p>
+              <div class="portfolio-container">
+                <h3 class="portfolio-title">Online Courses</h3>
+                <p class="portfolio-text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
