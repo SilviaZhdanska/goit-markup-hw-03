@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -16,8 +23,9 @@ p {
 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 a {
@@ -108,11 +116,8 @@ a {
 
 .hero-section {
   background-color: #2e2f42;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: center;
-  gap: 48px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-text {
@@ -122,6 +127,8 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  min-width: 496px;
+  margin: 0 auto;
 }
 
 .order-button {
@@ -135,11 +142,22 @@ a {
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 32px;
+  margin: 0 auto;
 }
 
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
+}
+
+.hidden-title {
+  visibility: hidden;
+}
+
+.main-list {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
 }
 
 .main-title {
@@ -171,6 +189,8 @@ a {
 
 .team-list {
   background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title-name {
@@ -181,6 +201,12 @@ a {
   text-transform: capitalize;
   color: #2e2f42;
 }
+
+.our-team {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -210,12 +236,24 @@ a {
   text-transform: capitalize;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -224,10 +262,13 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -250,4 +291,6 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  text-align: left;
+  margin: 0 auto;
 }
